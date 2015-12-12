@@ -1,0 +1,61 @@
+/* reseteo universal */
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+  padding-top: 1em;
+}
+
+figcaption{
+  font-family: sans-serif, verdana;
+  font-size: 0.6em;
+  font-weight: bold;
+}
+
+figure{
+  display: inline-block;
+  padding: 1em;
+}
+
+footer{
+  font-size: 1em;
+  margin-top: 5em;
+}
+
+h1{
+  background: -moz-linear-gradient(top, #0404B4 30%, #A9E2F3);
+  border-radius: 0.5em;
+  box-shadow: 5px 5px 5px rgba(0, 8, 199, 0.9);;
+  color: #CEECF5;
+  font-family: sans-serif, verdana;
+  font-size: 1.5em;
+  margin: 0 auto;
+  max-width: 40%;
+  padding: 1em;
+  text-align: center;
+  text-shadow: .2em .2em .2em rgba(0,0,0,.75);
+}
+
+h2{
+  font-family: sans-serif, verdana;
+  font-size: 1.2em;
+  padding-top: .8em;
+  padding-bottom: 0.8em;
+}
+
+img{
+  border: solid rgba(83, 65, 110, 0.8);
+  border-radius: 1em;
+  display: inline;
+  text-align: center;
+}
+
+section{
+  border-top: 0.15em dotted rgba(15, 15, 15, 0.2);
+  margin: 0 auto;
+  max-width: 95%;
+  text-align: center;
+}
