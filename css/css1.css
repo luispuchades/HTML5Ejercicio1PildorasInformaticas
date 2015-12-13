@@ -1,67 +1,126 @@
-/* reseteo universal */
+@charset "UTF-8";
+/*CSS Document*/
+
+/*************************/
+/* START UNIVERSAL RESET */
+/*************************/
 *{
   border: 0;
+  /*Con box-sizing conseguimos que el padding lo meta dentro de la caja. Evita que las cajas engorden.*/
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 100%;
+  font-weight: normal;
 }
+
+ol{
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+
+ul{
+  padding-left: 1.4em;
+  list-style: square;
+}
+
+q:before, q:after{
+  content:'';
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th, caption{
+  font-weight: normal;
+  text-align: left;
+}
+/*********************/
+/*END UNIVERSAL RESET*/
+/*********************/
 
 body{
   padding-top: 1em;
 }
 
 figcaption{
-  font-family: sans-serif, verdana;
-  font-size: 0.6em;
+  font-family: Arial, Helvetica sans-serif;
+  font-size: 0.7em;
   font-weight: bold;
+  margin-top: 0.3em;
+  text-align: center;
 }
 
 figure{
   display: inline-block;
-  padding: 1em;
+  margin: 1em;
 }
 
 footer{
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1em;
   margin-top: 5em;
 }
 
+footer a{
+  color: #00F;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: #0F0;
+}
+
 h1{
   background: -moz-linear-gradient(top, #0404B4 30%, #A9E2F3);
+  background: -ms-linear-gradient(top, #0404B4 30%, #A9E2F3);
+  background: -webkit-linear-gradient(top, #0404B4 30%, #A9E2F3);
   border-radius: 0.5em;
-  box-shadow: 5px 5px 5px rgba(0, 8, 199, 0.9);;
+  box-shadow: 5px 5px 5px rgba(0, 8, 199, 0.9);
   color: #CEECF5;
-  font-family: sans-serif, verdana;
+  font-family: verdana, geneva, sans-serif;
   font-size: 1.5em;
-  margin: 0 auto;
+  margin: 0.5em auto;
   max-width: 40%;
-  padding: 1em;
+  padding: 0.5em;
   text-align: center;
   text-shadow: .2em .2em .2em rgba(0,0,0,.75);
 }
 
 h2{
-  font-family: sans-serif, verdana;
+  color: #000;
+  font-family: verdana, geneva, sans-serif;
   font-size: 1.2em;
-  padding-top: .8em;
-  padding-bottom: 0.8em;
+  font-weight: bold;
+  padding: 0.8em 0.8em 0.8em 0em;
+  /*V1 Anterior:*/
+  /*padding-top: .8em;
+  padding-bottom: 0.8em;*/
 }
 
-img{
+figure img{
   border: solid rgba(83, 65, 110, 0.8);
   border-radius: 1em;
-  display: inline;
   text-align: center;
-  -moz-transition: 0.3s ease-out 0.1s;
+  -moz-transition: 0.3s ease-in-out 0.1s;
+  -ms-transition: 0.3s ease-in-out 0.1s;
+  -webkit-transition: 0.3s ease-in-out 0.1s;
 }
 
-img:hover{
+figure img:hover{
   -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
 }
 
 section{
   border-top: 0.15em dotted rgba(15, 15, 15, 0.2);
-  margin: 0 auto;
-  max-width: 95%;
-  padding-top: 1em;
+  margin: 1em auto;
+  max-width: 91.5%;
   text-align: center;
 }
