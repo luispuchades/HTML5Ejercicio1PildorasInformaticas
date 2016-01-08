@@ -62,13 +62,15 @@ figure{
 }
 
 footer{
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1em;
+  display: inline-block;
   margin-top: 5em;
 }
 
 footer a{
   color: #00F;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
+  margin: 0.5em 0.6em;
   text-decoration: none;
 }
 
@@ -106,6 +108,7 @@ h2{
 figure img{
   border: solid rgba(83, 65, 110, 0.8);
   border-radius: 1em;
+  box-shadow: 5px 5px 8px rgba(90, 75, 120, 0.8);
   text-align: center;
   -moz-transition: 0.3s ease-in-out 0.1s;
   -ms-transition: 0.3s ease-in-out 0.1s;
